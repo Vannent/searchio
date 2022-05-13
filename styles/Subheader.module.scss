@@ -1,0 +1,35 @@
+@import "./colors";
+
+.subheaderWrapper {
+  display: flex;
+  justify-content: center;
+  .subheaderContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $font-color-dark;
+    width: 13rem;
+    height: 2.3rem;
+    border-radius: 25px;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.212);
+    gap: 1rem;
+    font-weight: bold;
+
+    .subheaderSites,
+    .subheaderImages,
+    .subheaderVideos {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: $background-color;
+      letter-spacing: 0.2px;
+    }
+    .subheaderSites:hover,
+    .subheaderImages:hover,
+    .subheaderVideos:hover {
+      cursor: pointer;
+      transform: scale(1.05, 1.05);
+      color: $accent-color;
+    }
+  }
+}

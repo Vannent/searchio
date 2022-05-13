@@ -1,0 +1,25 @@
+@import "./colors";
+
+.sidebarContainer {
+  position: fixed;
+  top: 5vh;
+  background-color: $accent-color;
+  height: 90vh;
+  width: 30vw;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  transition: transform 0.35s ease-in-out;
+  animation: fade-in 0.3s;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

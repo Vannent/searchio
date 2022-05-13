@@ -1,0 +1,45 @@
+@import "./colors";
+
+.searchInputWrapper {
+  z-index: 1;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  border-radius: 25px;
+
+  .searchButton {
+    background-color: $accent-color;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: $background-color;
+    cursor: pointer;
+  }
+
+  .searchInput {
+    height: 2.4rem;
+    width: 15rem;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0px 20px;
+    font-weight: 600;
+    color: $accent-color;
+    font-size: 1.1rem;
+  }
+
+  .searchInput:focus-within {
+    outline: none;
+    box-shadow: 0px 0px 5px 5px $background-color;
+  }
+}
+
+.searchInputWrapper:hover {
+  box-shadow: 0px 0px 10px 10px $accent-color-light;
+}

@@ -1,0 +1,33 @@
+@import "./colors";
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+
+  .logo {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: $font-color-dark;
+    cursor: pointer;
+  }
+
+  .toggle {
+    button {
+      color: $font-color-dark;
+    }
+
+    button:hover {
+      color: $accent-color;
+    }
+  }
+
+  .githubIcon {
+    button {
+      color: $font-color-dark;
+    }
+  }
+}
